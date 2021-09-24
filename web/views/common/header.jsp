@@ -8,7 +8,7 @@
 
 <div class="loginArea">
 	<% if (m == null){  %>
-	<form action="/KH05_war_exploded/login.do" method="post" id="loginForm">
+	<form action="/myWeb/login.do" method="post" id="loginForm">
 		<table>
 			<!-- tr>td*2 -->
 			<tr>
@@ -67,25 +67,25 @@
 	}
 	
 	function logout(){
-		location.href="/KH05_war_exploded/logout.do";
+		location.href="/myWeb/logout.do";
 	}
 	
 	function memberJoin(){
-		location.href="/KH05_war_exploded/views/member/join.jsp";
+		location.href="/myWeb/views/member/join.jsp";
 	}
 	
 	function changeInfo(){
-		location.href="/KH05_war_exploded/views/member/memberUpdate.jsp";
+		location.href="/myWeb/views/member/memberUpdate.jsp";
 	}
 	
 	function goHome(){
-		location.href="/KH05_war_exploded/index.jsp";
+		location.href="/myWeb/index.jsp";
 	}
 	function goBoard(){
-		location.href="/KH05_war_exploded/selectList.bo";
+		location.href="/myWeb/selectList.bo";
 	}
 	function goThumbnail(){
-		location.href="/KH05_war_exploded/selectList.tn";
+		location.href="/myWeb/selectList.tn";
 	}
 </script>
 

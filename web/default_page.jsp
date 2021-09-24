@@ -5,8 +5,8 @@
 <head>
 <meta charset="UTF-8">
 <title>사진 게시판 목록</title>
-<script src="/KH05_war_exploded/assets/js/jquery-3.6.0.min.js"></script>
-<link rel="stylesheet" href="/KH05_war_exploded/assets/css/header.css" />
+<script src="/myWeb/assets/js/jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" href="/myWeb/assets/css/header.css" />
 </head>
 <body>
 	<%@ include file="../common/header.jsp" %>

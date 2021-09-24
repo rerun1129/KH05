@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-	background: url("/KH05_war_exploded/resources/images/background.jpg") no-repeat;
+	background: url("/myWeb/resources/images/background.jpg") no-repeat;
 	background-size: contain;
 	background-attachment: fixed;
 }

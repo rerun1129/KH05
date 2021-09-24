@@ -5,9 +5,9 @@
 <head>
 <meta charset="UTF-8">
 <title>회원 정보 수정</title>
-<script src="/KH05_war_exploded/resources/js/jquery-3.6.0.min.js"></script>
+<script src="/myWeb/resources/js/jquery-3.6.0.min.js"></script>
 <script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
-<link rel="stylesheet" href="/KH05_war_exploded/resources/css/header.css" />
+<link rel="stylesheet" href="/myWeb/resources/css/header.css" />
 <style>
 	section {
 		width : 700px;
@@ -49,7 +49,7 @@
 		<br>
 		<h2 align="center">회원 정보 수정</h2>
 		
-		<form action="/KH05_war_exploded/update.do" method="post" id="updateForm">
+		<form action="/myWeb/update.do" method="post" id="updateForm">
 		 			
 			<table align="center">
 				<tr>
@@ -190,7 +190,7 @@
     };
 	
     function goMain(){
-		location.href='/KH05_war_exploded/index.jsp';
+		location.href='/myWeb/index.jsp';
 	};
 	
 	function updateMember() {
@@ -198,7 +198,7 @@
 	}
 	
 	function deleteMember(){
-		location.href = "/KH05_war_exploded/delete.do?mid=<%= m.getUserId() %>";
+		location.href = "/myWeb/delete.do?mid=<%= m.getUserId() %>";
 	}
 	
 	$('input:radio').each(function(){

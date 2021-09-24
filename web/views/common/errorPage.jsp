@@ -9,7 +9,7 @@
 <head>
 	<meta charset="UTF-8" />
 	<title>에러 페이지</title>
-	<link rel="stylesheet" href="/KH05_war_exploded/resources/css/header.css" />
+	<link rel="stylesheet" href="/myWeb/resources/css/header.css" />
 	<style>
 		section {
 			width : 600px;
@@ -31,7 +31,7 @@
 		서비스 수행 중 에러가 발생하였습니다.<br>
 		해당 페이지가 계속 보인다면, 담당자에게 문의 하세요.<br>
 		<br>
-		<a href="/KH05_war_exploded/index.jsp">홈 화면으로 돌아가기....</a>
+		<a href="/myWeb/index.jsp">홈 화면으로 돌아가기....</a>
 		
 		</p>
 	</section>
