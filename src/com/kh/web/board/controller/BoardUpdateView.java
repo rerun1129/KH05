@@ -12,16 +12,16 @@ import com.kh.web.board.model.service.BoardService;
 import com.kh.web.board.model.vo.Board;
 
 /**
- * Servlet implementation class BoardSelectOne
+ * Servlet implementation class BoardUpdateView
  */
-@WebServlet("/selectOne.bo")
-public class BoardSelectOne extends HttpServlet {
+@WebServlet("/updateView.bo")
+public class BoardUpdateView extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	/**
 	 * @see HttpServlet#HttpServlet()
 	 */
-	public BoardSelectOne() {
+	public BoardUpdateView() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
@@ -31,23 +31,21 @@ public class BoardSelectOne extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		int bno = Integer.parseInt(request.getParameter("bno"));
-		BoardService service = new BoardService();
 
-		Board b = service.selectOne(bno);
+		Board b = new BoardService().updateView(bno);
 
 		String page = "";
 
 		if( b != null ) {
 			request.setAttribute("board", b);
-
-			page = "views/board/boardDetail.jsp";
+			page = "views/board/boardUpdate.jsp";
 		} else {
-			request.setAttribute("error-msg", "게시글 상세조회 실패!");
-
+			request.setAttribute("error-msg", "게시글 수정화면 연동 실패!");
 			page = "views/common/errorPage.jsp";
 		}
 
 		request.getRequestDispatcher(page).forward(request, response);
+
 	}
 
 	/**
