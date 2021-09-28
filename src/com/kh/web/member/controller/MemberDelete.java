@@ -24,6 +24,7 @@ public class MemberDelete extends HttpServlet {
     }
 
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
 		String userId = request.getParameter("mid");
 		
 		System.out.println("삭제할 회원 아이디 : " + userId);
